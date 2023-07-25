@@ -45,7 +45,9 @@ const ServicesSection = () => {
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-
+            </div>
+            <div className="image">
+                <img src={home2} alt="man for illustration"/>
             </div>
         </div>
     )
