@@ -3,6 +3,7 @@ import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
 import GlobalStyle from './components/GlobalStyle';
 import Nav from './components/Nav';
+import MovieDetail from '../src/pages/MovieDetail';
 import{Route, Routes} from "react-router-dom";
 //Create the router
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<AboutUs/>}/>
           <Route path="/work" element={<OurWork/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
+          <Route path="/work/:id" element={<MovieDetail/>}></Route>
 
         </Routes>
     
