@@ -1,28 +1,25 @@
-import AboutUs from './pages/AboutUs';
-import ContactUs from './pages/ContactUs';
-import OurWork from './pages/OurWork';
+// import AboutUs from './pages/AboutUs';
+// import ContactUs from './pages/ContactUs';
+// import OurWork from './pages/OurWork';
 import GlobalStyle from './components/GlobalStyle';
 import Nav from './components/Nav';
-import MovieDetail from '../src/pages/MovieDetail';
-import{Route, Routes} from "react-router-dom";
-//Create the router
-
+// import MovieDetail from '../src/pages/MovieDetail';
+// import{Route, Routes, useLocation} from "react-router-dom";
+import { AnimatePresence,} from 'framer-motion';
+import AnimatedRoutes from '../src/components/AnimatedRoutes';
 
 
 
 //Start the router
 function App() {
+  // const location = useLocation();
   return (
     <div className="App">
         <GlobalStyle/>
         <Nav/>
-        <Routes>
-          <Route path="/" element={<AboutUs/>}/>
-          <Route path="/work" element={<OurWork/>}/>
-          <Route path="/contact" element={<ContactUs/>}/>
-          <Route path="/work/:id" element={<MovieDetail/>}></Route>
-
-        </Routes>
+        <AnimatePresence mode='wait'>
+        <AnimatedRoutes/>
+        </AnimatePresence>
     
     </div>
   );
