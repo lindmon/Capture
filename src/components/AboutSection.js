@@ -35,7 +35,7 @@ const container = {
                 <motion.button variants={fade}>Contact US</motion.button>
             </Description>
             <Image>
-                <motion.img variants={photoAnim} src={home1} alt="guy with the camera" />
+                <motion.img variants={photoAnim} initial="hidden" animate="show" src={home1} alt="guy with the camera" />
             </Image>
             <Wave/>
 
