@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 // import{Route, Routes, useLocation} from "react-router-dom";
 import { AnimatePresence,} from 'framer-motion';
 import AnimatedRoutes from '../src/components/AnimatedRoutes';
+import ScrollTop from './components/ScrollTop';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
         <GlobalStyle/>
+        <ScrollTop/>
         <Nav/>
         <AnimatePresence mode='wait'>
         <AnimatedRoutes/>
