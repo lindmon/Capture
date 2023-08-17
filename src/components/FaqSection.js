@@ -5,7 +5,6 @@ import Toggle from './Toggle';
 import { LayoutGroup} from "framer-motion";
 import {useScroll} from './useScroll';
 import {scrollReveal} from "../animation";
-import {motion} from 'framer-motion';
 
 const FaqSection = () => {
     const [element, controls] = useScroll();
